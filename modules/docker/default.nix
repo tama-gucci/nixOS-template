@@ -28,8 +28,8 @@ in
 
     environment.systemPackages = with pkgs; [ docker-compose ];
 
-    users.extraGroups.docker.members = lib.mkIf config.my-config.user.YOUR-USERNAME-HERE.enable [
-      "YOUR-USERNAME-HERE"
+    users.extraGroups.docker.members = lib.mkIf config.my-config.user.sin.enable [
+      "sin"
     ];
 
   };
