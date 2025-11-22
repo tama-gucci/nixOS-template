@@ -25,7 +25,7 @@ in
       sound.enable = true;
       fonts.enable = true;
       gnome.enable = true;
-      # gaming.enable = true;
+      gaming.enable = true;
     };
 
     # Enable CUPS to print documents.
