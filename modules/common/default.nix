@@ -19,7 +19,7 @@ in
       nix-common.enable = true;
       openssh.enable = true;
       user = {
-        YOUR-USERNAME-HERE.enable = true;
+        sin = true;
         root.enable = true;
       };
     };
