@@ -5,20 +5,20 @@
   ...
 }:
 let
-  cfg = config.my-config.user.YOUR-USERNAME-HERE;
+  cfg = config.my-config.user.sin;
 in
 {
-  options.my-config.user.YOUR-USERNAME-HERE = {
-    enable = lib.mkEnableOption "activate user YOUR-USERNAME-HERE";
+  options.my-config.user.sin = {
+    enable = lib.mkEnableOption "activate user sin";
   };
 
   config = lib.mkIf cfg.enable {
     # TODO: find and replace every instance of "YOUR-USERNAME-HERE" in this repo with your username, including this file's name
     # changing your username is very hard to do, so choose wisely
     # if you have installed NixOS with the default installer, you will have set a username there. Be sure to use the same one here
-    users.users.YOUR-USERNAME-HERE = {
+    users.users.sin = {
       isNormalUser = true;
-      description = "Example Username"; # TODO set your display name here
+      description = "Sinclair"; # TODO set your display name here
       extraGroups = [
         "wheel"
         (lib.mkIf config.networking.networkmanager.enable "networkmanager")
