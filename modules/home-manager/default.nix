@@ -47,7 +47,7 @@ in
         system-config = config;
       }
       // flake-self.inputs;
-      users.YOUR-USERNAME-HERE = flake-self.homeConfigurations.${cfg.profile};
+      users.sin = flake-self.homeConfigurations.${cfg.profile};
       users.root = flake-self.homeConfigurations.${cfg.rootProfile};
     };
   };
