@@ -14,7 +14,7 @@ in
 
   config = lib.mkIf cfg.enable {
     ## steam is an unfree package. uncomment this only if you also uncommented the allowUnfree options
-    # programs.steam.enable = true;
+    programs.steam.enable = true;
 
     environment.systemPackages = with pkgs; [
       # lutris usually depends on some unfree software, but the lutris-free package has these dependencies removed
